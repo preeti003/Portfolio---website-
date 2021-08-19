@@ -1,6 +1,30 @@
-*{padding :0;margin:0; box-sizing:border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+
+
+*{padding :0;margin:0; box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;  
 }
+
+body{
+    background-color: #bacef3;
+    
+}
+
+canvas.particles-js-canvas-el{
+    position:absolute;
+    height:100% !important;
+    width:100%;
+    top:600px;
+    right:0;
+    left:0;
+    right:0;
+    z-index:-1000;
+    margin:0;
+}
+
+
 header{
     width : 100%;
     height: 100vh;
@@ -9,6 +33,7 @@ header{
     background-size: cover;
 
 }
+
 
 nav{
     width: 50%;
@@ -20,6 +45,7 @@ nav{
 
 }
 
+
 .logo{
     font-size:3em;
     color: white;
@@ -27,6 +53,7 @@ nav{
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 5px;
 }
+
 
 .menu a{
     text-decoration:none;
@@ -39,6 +66,7 @@ nav{
     transition:0.5s ease;
     
 }
+
 
 .menu{
     padding-top: 35px;
@@ -57,10 +85,12 @@ nav{
     margin:0 20px;
 }
 
+
 .s_icon{
     position:absolute;
     bottom:8%;
 }
+
 
 .s_icon i{
     color:white;
@@ -89,265 +119,39 @@ nav{
 .s_icon i:hover{
    transform: translateY(-20px);
 }
-.about {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url("./assets/bg5.jpg");
-    background-size: cover;
-    background-color: #cccccc;;
-    display: flex;
+
+
+#about{
+    display:flex;
+    padding: 20px 20px;
+    margin: 100px auto;
+    margin-left: 30px;
+    margin-right:20px;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-}
-.about p {
-    font-family: 'Akaya Kanadaka', cursive;
-    color: white;
-    width: 60%;
-    margin: 0 auto;
-    font-size: x-large;
-    letter-spacing: 1px;
+    gap:100px;
 }
 
-.about a{
-    color: lemonchiffon;
-    font-style:normal;
+.content{
+    font-family: 'Poppins', sans-serif; 
+    font-weight:500;
+    font-size:small;
 }
 
-
-.timeline {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url("./assets/bg5.jpg");
-    background-size: cover;
-    background-color: #cccccc;;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.extra{
+    color:#192a56;
+    font-weight: bold;
 }
 
-#carrier{
-    height: 600px;
-    width: 30%;
-    border-radius: 10px;
-}
-.work {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url("./assets/bg2.jpg");
-    background-size: cover;
-    background-color: #cccccc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.work h2 {
-    color: white;
-    text-align: center;
-    font-size: 35px;
-    font-weight: 900;
-    font-family: 'Goblin One', cursive;
-    background-color:rgba(255, 255, 255,0.3);
-    border-radius: 4px;
-}
+.hello{
+    font-family: 'Kaushan Script', cursive;
+text-shadow: #192a56;
+color: #e84393;
+font-weight: 800;
 
-.projects {
-    margin: 25px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    grid-gap: 1rem;
-}
-
-.sub-projects{
-        margin: 25px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: auto;
-        grid-gap: 1rem;
-}
-
-.project-card {
-    position: relative;
-    width: 10rem;
-    height: 12rem;
-    text-align: center;
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 5px;
-}
-
-.project-card:hover {
-    box-shadow: 5px 5px 15px rgb(255, 255, 255);
-}
-
-.project-card img{
-    width: 100%;
-    height: 100%;
-}
-
-.project-card h3{
-    font-size: 1.2rem;
-    margin: 10px;
-    color: white;
-}
-
-
-#linkofcon{
-    color:white;
-    border: 0;
-}
-
-.contact {
-    font-family: 'Akaya Kanadaka', cursive;
-    font-size: 20px;
-    position: relative;
-    width: 100%;
-    background-image: url(./assets/bg6.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-}
-
-.contact h2, .contact p {
-    color: white;
-    text-align: center;
-    margin: 0;
-}
-
-.contact form {
-    width: 50%;
-    color: white;
-}
-
-.contact input {
-    width: 100%;
-}
-
-#option {
-    width: 4%;
-}
-
-#feedback-input {
-    width: 100%;
 }
 
 
 
 
 
-.links {
-    display: flex;
-    flex-direction: row;
-}
-
-.links a {
-    margin: 0 10px;
-    padding: 3px;
-    width: 110px;
-    color: white;
-}
-
-
-
-@media screen and (max-width:664px) { 
-    .flex1{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .tribute{
-        text-align: center;
-        height:10rem;
-        width:35%;
-        border-radius: 50%;
-        margin-right:0;
-        float:none;
-    }
-    .calculator{
-        text-align: center;
-        height:10rem;
-        width:35%;
-        border-radius: 50%;
-        margin-right:0;
-        float:none;
-    }
-    .product{
-        text-align: center;
-        height:10rem;
-        width:35%;
-        border-radius: 50%;
-        margin-right:0;
-        float:none;
-    }
-    .qg{
-        text-align: center;
-        height:10rem;
-        width:35%;
-        border-radius: 50%;
-        margin-right:0;
-        float:none;
-    }
-    .todo{
-        text-align: center;
-        height:10rem;
-        width:35%;
-        border-radius: 50%;
-        margin-right:0;
-        float:none;
-    }
-    .project-card{
-        text-align: center;
-        height:10rem;
-        width:35%;
-        border-radius: 50%;
-        margin-right:0;
-        float:none;
-    }
-
-}
-
-@media(max-width:1200px){
-    nav{
-        justify-content:space-evenly;
-    }
-    .homepage h1{
-        font-size:62px;
-        font-weight: 800;
-    }
-    .homepage h2{
-        font-weight: 700;
-        color: #e27985;
-    }
-    .about p{
-        font-size: xx-large;
-        width:80%;
-    }
-    .project-card h3{
-        font-size: 1.5rem;
-    }
-    .survey{
-        font-size: 27px;
-        letter-spacing: 3.5px;
-    }
-    .contact{
-        height: 25vh;
-        font-size: 27px;
-    }
-    .work{
-        height: 80vh;
-    }
-    #carrier{
-        height: 1000px;
-        width: 70%;
-    }
-    .timeline p{
-        width: 80%;
-        font-size: 75px;
-    }
-}
