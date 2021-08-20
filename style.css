@@ -50,7 +50,12 @@ nav{
     font-size:3em;
     color: white;
     letter-spacing:5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Kaushan Script', cursive;
+text-shadow: #192a56;
+color:white;
+font-weight: 800;
+font-size:xx-large;
+    
     padding-top: 5px;
 }
 
@@ -60,7 +65,7 @@ nav{
     color:white;
     display:block;
     padding: 10px 20px;
-    margin: 20px auto;
+    margin: 10px auto;
     font-size:20px;
     font-family: verdana ,Verdana, Geneva, Tahoma, sans-serif;
     transition:0.5s ease;
@@ -125,11 +130,11 @@ nav{
     display:flex;
     padding: 20px 20px;
     margin: 100px auto;
-    margin-left: 30px;
-    margin-right:20px;
+    margin-left: 120px;
+    margin-right:120px;
     justify-content: flex-end;
     align-items: center;
-    gap:100px;
+    gap:50px;
 }
 
 .content{
@@ -148,8 +153,97 @@ nav{
 text-shadow: #192a56;
 color: #e84393;
 font-weight: 800;
+}
+
+
+.skills_h{
+    font-family: 'Poppins', sans-serif;
+    color:#192a56;
+    font-weight: bold;
+}
+
+
+#skills{
+    padding:100px 0px;
+    background-color: #c9d5ec;
+    
+}
+
+.skills_left{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+ hr{
+    border:0.5px solid ;
+    width:6rem
+}
+
+
+.each_skills{
+    margin: 25px 0px;
 
 }
+
+ .each_skills span{
+    color: white !important;
+    font-size: 17px;
+    font-weight:600;
+}
+
+.each_skills .progress{
+    border-radius:100px;
+    margin-top:3px;
+    height:10px;
+}
+
+#projects .container .project_heading span{
+    
+        font-family: 'Kaushan Script', cursive;
+    text-shadow: #192a56;
+    color: #e84393;
+    font-weight: 800;
+    font-size:xx-large;
+    
+    
+}
+
+#projects{
+    padding:100px 0px 100px 0px;   
+    background-image:linear-gradient(90deg, rgb(117, 148, 226),rgba(47,54,64,0.2)) 
+}
+
+
+.project_content{
+    display:flex;
+    padding:30px 0;
+    flex-wrap:wrap;
+  
+    gap:40px;
+}
+
+#blogs .container .blogs_heading span{
+    
+    font-family: 'Kaushan Script', cursive;
+text-shadow: #192a56;
+color: #e84393;
+font-weight: 800;
+font-size:xx-large;
+
+
+}
+
+#blogs{
+padding:0px 0px;   
+background-image:linear-gradient(90deg,rgb(117, 148, 226) ,rgba(47,54,64,0.2)) 
+}
+
+
+
+
+
+
 
 
 
