@@ -1,2 +1,2 @@
 # My portfolio website 
-#check it up to know more about me
+#check it out on https://preeti003.github.io/Portfolio---website-/ to know more about me
